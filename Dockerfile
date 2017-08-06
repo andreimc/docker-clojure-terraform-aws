@@ -11,6 +11,4 @@ RUN wget https://releases.hashicorp.com/terraform/$VERSION/terraform_${VERSION}_
     unzip terraform_${VERSION}_linux_amd64.zip && rm terraform_${VERSION}_linux_amd64.zip && \
     mv terraform /usr/bin/
 
-RUN yarn global add serverless
-
 ENTRYPOINT ["/bin/sh", "-c"]
