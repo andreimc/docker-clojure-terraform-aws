@@ -5,7 +5,7 @@ RUN apk --no-cache update && \
     pip --no-cache-dir install awscli && \
     rm -rf /var/cache/apk/*
 
-ENV VERSION=0.8.8 NODE_VERSION=v6.11.2 NPM_VERSION=3
+ENV VERSION=0.10.0 NODE_VERSION=v6.11.2 NPM_VERSION=3
 
 # For base builds
 ENV CONFIG_FLAGS="--fully-static --without-npm" DEL_PKGS="libstdc++" RM_DIRS=/usr/include
